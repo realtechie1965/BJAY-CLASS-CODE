@@ -17,6 +17,10 @@
    16  cd /opt/sonar8/bin/linux-x86-64/
 
 Login 
+PORT: 9000
+user: admin
+password: admin
+
    ---- Add Project --> Manually --> Project key ---> continue ---> Token ---> Generate Token ----- copy the token
 ----continue ---- [Maven] ----> copy thw command and Run
    Run the command on maven server
