@@ -30,7 +30,7 @@ Procedure
 1. create settings.xml for credentials 
    ```sh 
    <?xml version="1.0" encoding="UTF-8"?>
-	<settings ...>
+	<settings>
 		<servers>
 
 			<server>
