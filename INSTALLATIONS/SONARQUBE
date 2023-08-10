@@ -4,6 +4,7 @@
     4  amazon-linux-extras install java-openjdk11
     5  cd /opt
     6  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
+    6i wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
     7  unzip sonarqube-8.9.2.46101.zip 
     8  clear
     9  ls
@@ -14,3 +15,8 @@
    14  passwd sonar
    15  chown -R sonar:sonar /opt/sonar8
    16  cd /opt/sonar8/bin/linux-x86-64/
+
+Login 
+   ---- Add Project --> Manually --> Project key ---> continue ---> Token ---> Generate Token ----- copy the token
+----continue ---- [Maven] ----> copy thw command and Run
+   Run the command on maven server
