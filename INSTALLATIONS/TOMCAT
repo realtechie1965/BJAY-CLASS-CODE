@@ -3,7 +3,9 @@ cd /opt
   tar -xvzf /opt/apache-tomcat-8.5.85.tar.gz
 give executing permissions to startup.sh and shutdown.sh which are under bin.
 
-   chmod +x /opt/apache-tomcat-8.5.85/bin/startup.sh shutdown.sh
+   chmod +x /opt/apache-tomcat-8.5.85/bin/startup.sh
+   chmod +x /opt/apache-tomcat-8.5.85/bin/shutdown.sh
+
 create link files for tomcat startup.sh and shutdown.sh
 
   ln -s /opt/apache-tomcat-8.5.85/bin/startup.sh /usr/local/bin/tomcatup
