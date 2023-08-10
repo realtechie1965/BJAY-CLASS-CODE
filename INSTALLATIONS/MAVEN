@@ -1,0 +1,17 @@
+yum install git -y
+wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip
+ls
+rm -rf apache-maven-3.9.0-bin.zip 
+cd /opt
+wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip
+unzip apache-maven-3.9.0-bin.zip 
+rm -rf apache-maven-3.9.0-bin.zip
+mv apache-maven-3.9.0 maven9
+vi ~/.bash_profile
+source ~/.bash_profile
+mvn -version
+yum install java-1.8* -y
+mvn -version
+sudo update-alternatives --config 'java'
+ls /usr/lib/jvm
+cd
