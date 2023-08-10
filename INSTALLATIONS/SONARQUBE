@@ -16,6 +16,10 @@
    15  chown -R sonar:sonar /opt/sonar8
    16  cd /opt/sonar8/bin/linux-x86-64/
 
+       ./sonar.sh start
+       ./sonar.sh status
+       ./sonar.sh stop
+
 Login 
 PORT: 9000
 user: admin
