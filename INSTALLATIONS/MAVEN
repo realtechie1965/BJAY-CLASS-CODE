@@ -8,6 +8,9 @@ unzip apache-maven-3.9.0-bin.zip
 rm -rf apache-maven-3.9.0-bin.zip
 mv apache-maven-3.9.0 maven9
 vi ~/.bash_profile
+M2_HOME=/opt/maven
+M2=$M2_HOME/bin
+PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
 source ~/.bash_profile
 mvn -version
 yum install java-1.8* -y
