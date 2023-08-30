@@ -34,6 +34,9 @@ now application is accessible on port 8090. but tomcat application doesnt allow 
 find / -name context.xml
 above command gives 3 context.xml files. comment () Value ClassName field on files which are under webapp directory. After that restart tomcat services to effect these changes
 
+# To comment a line
+<!-- -->
+
 tomcatdown
 tomcatup
 Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users to conf/tomcat-user.xml file
