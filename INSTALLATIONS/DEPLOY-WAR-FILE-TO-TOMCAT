@@ -19,7 +19,7 @@ Procedure
    			<artifactId>tomcat7-maven-plugin</artifactId>
    			<version>2.2</version>
    	  	<configuration>
-      		<url>http://localhost:8080/manager/text</url>
+      		<url>http://ipaddress/manager/text</url>
       		<server>TomcatServer</server>
       		<path>/helloworld-webapp</path>
    		  </configuration>
@@ -28,6 +28,8 @@ Procedure
    ```
 
 1. create settings.xml for credentials 
+Create the file (settings.xml in .m2 directory)
+
    ```sh 
    <?xml version="1.0" encoding="UTF-8"?>
 	<settings>
