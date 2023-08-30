@@ -1,1 +1,11 @@
+mvn archetype:generate
+mvn archetype:generate | grep maven-archetype-webapp  #lets get the number of the one with --> org.apache.maven.archetypes
+mvn archetype:generate     -------> the number ---> 7 ----> com.boljibeatz -----> second maven project -----> enter for the default value 2x ----y
 
+########### running maven commands #############+
+install tree
+mvn validate
+mvn compile
+mvn test
+mvn clean
+mvn clean package
