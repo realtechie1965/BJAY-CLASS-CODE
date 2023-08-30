@@ -1,4 +1,12 @@
 yum install git -y
+yum install java-1.8* -y
+mvn -version
+sudo update-alternatives --config 'java'
+ls /usr/lib/jvm
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64        
+exportJAVA_HOME
+PATH=$PATH:$JAVA_HOME / PATH=$PATH:$HOME/bin:$JAVA_HOME
+
 wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip
 ls
 rm -rf apache-maven-3.9.0-bin.zip 
@@ -13,8 +21,3 @@ M2=$M2_HOME/bin
 PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
 source ~/.bash_profile
 mvn -version
-yum install java-1.8* -y
-mvn -version
-sudo update-alternatives --config 'java'
-ls /usr/lib/jvm
-cd
