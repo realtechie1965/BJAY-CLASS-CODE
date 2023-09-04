@@ -10,9 +10,9 @@ cd /opt
 wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.zip
 unzip apache-maven-3.9.4-bin.zip
 rm -rf apache-maven-3.9.4-bin.zip
-mv apache-maven-3.9.4-bin maven9
+mv apache-maven-3.9.4 maven4
 vi ~/.bash_profile
-M2_HOME=/opt/maven
+M2_HOME=/opt/maven4
 M2=$M2_HOME/bin
 PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
 source ~/.bash_profile
