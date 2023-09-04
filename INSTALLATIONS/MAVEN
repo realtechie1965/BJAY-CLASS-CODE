@@ -6,15 +6,11 @@ ls /usr/lib/jvm
 JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64        
 exportJAVA_HOME
 PATH=$PATH:$JAVA_HOME / PATH=$PATH:$HOME/bin:$JAVA_HOME
-
-wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip
-ls
-rm -rf apache-maven-3.9.0-bin.zip 
 cd /opt
-wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip
-unzip apache-maven-3.9.0-bin.zip 
-rm -rf apache-maven-3.9.0-bin.zip
-mv apache-maven-3.9.0 maven9
+wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.zip
+unzip apache-maven-3.9.4-bin.zip
+rm -rf apache-maven-3.9.4-bin.zip
+mv apache-maven-3.9.4-bin maven9
 vi ~/.bash_profile
 M2_HOME=/opt/maven
 M2=$M2_HOME/bin
