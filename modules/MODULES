@@ -1,0 +1,4 @@
+#3 Major source of modules
+#GITHUB   = terraform-aws-modules/terraform-ec2-instance
+#REGISTRY = modules
+#LOCAL FILE PATH
