@@ -101,17 +101,17 @@ resource "aws_route_table" "TechHouse-Pub-Rt" {
   }
 }
 
-resource "aws_route_table_association" "TechHouse-Rt-Ass1a" {
+resource "aws_route_table_association" "TechHousePub-Sub1-A" {
   subnet_id      = aws_subnet.TechHousePub-Sub1.id
   route_table_id = aws_route_table.TechHouse-Pub-Rt.id
 }
 
-resource "aws_route_table_association" "levelup-public-2-a" {
+resource "aws_route_table_association" "TechHousePub-Sub2-A" {
   subnet_id      = aws_subnet.TechHousePub-Sub2.id
   route_table_id = aws_route_table.TechHouse-Pub-Rt.id
 }
 
-resource "aws_route_table_association" "levelup-public-3-a" {
+resource "aws_route_table_association" "TechHousePub-Sub3-A" {
   subnet_id      = aws_subnet.TechHousePub-Sub3.id
   route_table_id = aws_route_table.TechHouse-Pub-Rt.id
 }
