@@ -16,3 +16,6 @@ resource "aws_instance" "MyFirstInstnace" {
   }
 
 }
+
+#TO CREATE SSH-KEYGEN
+#ssh-keygen -f <keyname>
