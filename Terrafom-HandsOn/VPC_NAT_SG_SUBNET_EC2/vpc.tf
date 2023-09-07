@@ -94,7 +94,9 @@ resource "aws_route_table" "realtechie-Pub-Rt" {
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.realtechie-igw.id
-    #Name = "realtechie-Pub-Rt"
+  }
+    tags = {
+    Name = "realtechie-Pub-Rt"
   }
 }
 
