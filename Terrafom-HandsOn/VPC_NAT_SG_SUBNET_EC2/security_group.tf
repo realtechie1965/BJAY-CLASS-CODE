@@ -1,7 +1,7 @@
 #Security Group for levelupvpc
-resource "aws_security_group" "Ec2_server_sg" {
-  vpc_id      = aws_vpc.TechHouse.id
-  name        = "Ec2_server_sg"
+resource "aws_security_group" "realtechie-sg" {
+  vpc_id      = aws_vpc.realtechie.id
+  name        = "realtechie-sg"
   description = "security group that allows ssh connection"
 
   egress {
@@ -19,6 +19,6 @@ resource "aws_security_group" "Ec2_server_sg" {
   }
   
   tags = {
-    Name = "Server_Sg"
+    Name = "realtechie-sg"
   }
 }
