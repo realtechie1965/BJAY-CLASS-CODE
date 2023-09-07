@@ -1,24 +1,25 @@
-
-resource "aws_key_pair" "levelup_key" {
-    key_name = "levelup_key"
+resource "aws_key_pair" "realtechie_key" {
+    key_name = "realtechie_key"
     public_key = file(var.PATH_TO_PUBLIC_KEY)
 }
 
-#Create AWS Instance
 resource "aws_instance" "MyFirstInstnace" {
   ami           = lookup(var.AMIS, var.AWS_REGION)
   instance_type = "t2.micro"
-  availability_zone = "us-east-2a"
-  key_name      = aws_key_pair.levelup_key.key_name
+  key_name      = aws_key_pair.realtechie_key.key_name
+
+  vpc_security_group_ids = [aws_security_group.realtechie-sg.id]
+  subnet_id = aws_subnet.realtechiePub-Sub1.id
 
   tags = {
-    Name = "custom_instance"
+    Name = "instance-EBS"
   }
+
 }
 
 #EBS resource Creation
 resource "aws_ebs_volume" "ebs-volume-1" {
-  availability_zone = "us-east-2a"
+  availability_zone = "us-east-1a"
   size              = 50
   type              = "gp2"
 
@@ -33,6 +34,9 @@ resource "aws_volume_attachment" "ebs-volume-1-attachment" {
   volume_id   = aws_ebs_volume.ebs-volume-1.id
   instance_id = aws_instance.MyFirstInstnace.id
 }
+
+#TO CREATE SSH-KEYGEN
+#ssh-keygen -f <keyname>
 
 #Mounting the disk
 #df -h
