@@ -1,0 +1,6 @@
+#for deployment
+#cd /root/.ssh (to create the keygen)
+#ssh-keygen -f levelup.key
+#cd networkmodule
+#terraform plan
+#terraform apply

@@ -1,0 +1,21 @@
+#COMPONENTS OF PACKER
+#variable
+#builder
+#provisioner
+#post-preprocessor
+
+
+#TO BUILD PACKER
+#packer validate filename.json
+#packer build filename.json
+
+
+
+
+#INSTALL PACKER IN LINUX
+#wget https://releases.hashicorp.com/packer/1.9.4/packer_1.9.4_linux_amd64.zip
+#unzip (packer_package)
+#sudo mv packer_package /usr/local/bin
+#packer --version
+#packer
+#PACKER BUILD FLOW IN TERRAFORM ==> Validate ---> Build ---> Save Artifacts ----> Use Artifacts further in Terraform
