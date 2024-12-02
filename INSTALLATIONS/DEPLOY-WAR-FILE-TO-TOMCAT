@@ -19,7 +19,7 @@ Procedure
    			<artifactId>tomcat7-maven-plugin</artifactId>
    			<version>2.2</version>
    	  	<configuration>
-      		<url>http://ipaddress/manager/text</url>
+      		<url>http://ipaddress:8080/manager/text</url>
       		<server>TomcatServer</server>
       		<path>/helloworld-webapp</path>
    		  </configuration>
