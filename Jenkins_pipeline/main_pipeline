@@ -60,6 +60,13 @@ pipeline {
 	           }
 	        }
         }
+
+	stage('Version-Artifacts){
+		steps{
+		    sh 'mkdir -p version'
+		    sh 'cp target/sampleapp.war version/sampleapp-$BUILD_ID.war'
+		}
+	}
         
         stage('Sonar Analysis') {
             environment {
