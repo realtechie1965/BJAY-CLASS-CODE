@@ -29,6 +29,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+
+        stage('TRIVY FS SCAN') {
+            steps {
+                sh "trivy fs . > trivyfs.txt"
+            }
+        }
         
         stage('code-review') {
             steps{
